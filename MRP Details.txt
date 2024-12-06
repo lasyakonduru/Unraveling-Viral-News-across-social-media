@@ -1,0 +1,50 @@
+MRP Details
+
+Viral News Dynamics: A Multi-Factor Analysis of Article Popularity on Social Media
+
+•	Which news article characteristics make them viral across different social media?
+•	Is there any topic that makes some news more viral than others across different social media and changes over time?
+•	How does user sentiment in using likes, shares, and comments predict the popularity of news articles?
+
+Question 2: Is there any topic that makes some news more viral than others across different social media and changes over time?
+What has been done:
+Topic Modeling:
+
+Used LDA to identify dominant topics in the dataset and assigned topics to articles.
+Identified which topics received the highest average engagement across platforms.
+Engagement Trends by Topic:
+
+Visualized engagement trends over time (e.g., Facebook engagement for "economy" and other topics).
+What should be done next:
+Analyze Topic-Specific Engagement:
+
+Explore engagement patterns across platforms (Facebook, GooglePlus, LinkedIn) for each topic.
+Compare topics with high engagement over time to identify consistent or emerging trends.
+Topic-Sentiment Interaction:
+
+Examine how sentiment interacts with topics to drive engagement. For instance, are certain topics more viral when presented positively vs. negatively?
+
+Question 3: How does user sentiment in using likes, shares, and comments predict the popularity of news articles?
+What has been done:
+Sentiment-Engagement Correlation:
+Calculated and visualized the correlation between sentiment scores (BERT_Score) and engagement metrics.
+Found that engagement generally correlates with sentiment but may vary by platform.
+What should be done next:
+Sentiment and Platform-Specific Analysis:
+
+Analyze how sentiment scores drive engagement differently on platforms (e.g., positive sentiment may perform better on Facebook, while neutral scores may do well on LinkedIn).
+Compare sentiment-driven engagement for specific topics (e.g., "economy" vs. "microsoft").
+Predictive Modeling:
+
+Build a predictive model (e.g., Random Forest) to predict total engagement (Facebook + GooglePlus + LinkedIn) based on SentimentTitle, Topic, and other features.
+
+
+Summary:
+The characteristics that make news articles viral are:
+
+Topical relevance, focusing on high-profile figures and globally significant themes.
+Concise and impactful headlines, featuring strong, emotional keywords.
+Emotionally resonant sentiment, where negative sentiment leads on platforms like Facebook, and positive sentiment thrives on LinkedIn.
+Platform-specific tailoring, acknowledging Facebook’s dominance in emotional content and LinkedIn’s preference for professional news.
+Cluster alignment, where articles fit into well-defined themes such as politics, technology, or economy.
+These insights align with findings from Kilgo & Sinta (2016) on sensationalistic headlines and Sangiorgio et al. (2024) on platform dynamics in news virality.
